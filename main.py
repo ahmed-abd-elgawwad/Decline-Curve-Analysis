@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import plotly_express as px
 from dca import remove_outlier ,hyperbolic_fit,exponential_fit,harmonic_fit,hyperbolic,exposential,harmonic,PREPROCESS_DATA
-import seaborn as sns
 st.title("Decline Curve Analysis")
 """An app to make Decline curve analysis using ARP's models for conventional reservoirs.
 - Upload your data 
