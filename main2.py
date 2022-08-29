@@ -10,7 +10,7 @@ st.title("Decline Curve Analysis")
 - The result will whow
 """
 # ------------------------ side bar -------------------------
-st.sidebar.markdown("## Data Input")
+st.sidebar.markdown("## Data Input `Production data`")
 file = st.sidebar.file_uploader("Upload Data file",type=["CSV"])
 # check if the file is uploaded
 
