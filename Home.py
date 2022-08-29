@@ -55,7 +55,7 @@ if file:
         df_smoothed = arps_model.smooth(window_size=window,stds=std,trim=True)
         Q_smoothed= Q_col+"_rol_Av"
         df2= df_smoothed[[date,Q_col,Q_smoothed]]
-        fig = px.line(df2,x=date,y=[Q_col,Q_smoothed],width=900,height=600)
+        fig = px.line(df2,x=date,y=[Q_col,Q_smoothed])
         st.plotly_chart(fig)
 
         # preprocess the data column
@@ -64,7 +64,7 @@ if file:
         """## ARP's models fitted"""
         # fit all the model
         parameters , Qs = arps_model.fit_all_models()
-        fig = px.line(Qs,x="Time",y=["Original_Smoothed","Exponential","Harmonic","Hyperbolic"],width=1000,height=600)
+        fig = px.line(Qs,x="Time",y=["Original_Smoothed","Exponential","Harmonic","Hyperbolic"])
         st.plotly_chart(fig)
         """#### Models parameters"""
         st.table(parameters)
