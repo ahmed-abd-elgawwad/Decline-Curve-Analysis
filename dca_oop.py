@@ -150,8 +150,8 @@ class ARPS:
             "Time": self.T,
             "Original_Smoothed": self.Q,
             "Exponential": qex,
-            "Harmonic": qhp,
-            "Hyperbolic": qhr
+            "Hyperbolic": qhp,
+            "Harmonic": qhr
         })
         return data_info , Qs
 
