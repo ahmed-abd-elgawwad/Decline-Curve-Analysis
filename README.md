@@ -3,7 +3,7 @@
 - take the well or field data 
 - specify the prameters [ data column , production column ]
 - apply Arp's model on the data after smoothing with moving average 
--  Try the app ( Streamlit_DCA_App )[https://decline-curve-analysis.herokuapp.com/]
+-  Try the app [Streamlit_DCA_App](https://decline-curve-analysis.herokuapp.com/)
 ## dca python module and the ARPS class:
 1. Create the ARP's object with its parameter
 
